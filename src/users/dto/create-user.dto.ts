@@ -8,6 +8,7 @@ import {
   MaxLength,
   IsEmail,
   Matches,
+  IsOptional,
 } from 'class-validator';
 
 // model User {
@@ -82,12 +83,9 @@ export class CreateUserDto {
   })
   nickname: string;
 
+  @IsOptional()
   @IsString()
-  @ApiProperty({
-    description: 'intro',
-    example: '안녕하세요',
-  })
-  intro: string;
+  intro?: string;
 
   @IsString()
   @IsNotEmpty()
@@ -97,10 +95,7 @@ export class CreateUserDto {
   })
   confirmPassword: string;
 
+  @IsOptional()
   @IsString()
-  @ApiProperty({
-    description: 'profileImg',
-    example: 'string',
-  })
-  profileImg: string;
+  profileImg?: string;
 }
