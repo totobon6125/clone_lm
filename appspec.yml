@@ -15,8 +15,8 @@ permissions:
     group: ubuntu
 
 # codedeploy가 참조할 스크립트의 경로 설정
-# hooks:
-#   AfterInstall:
-#     - location: scripts/deploy.sh
-#       timeout: 60
-#       runas: ubuntu
+hooks:
+  AfterInstall:
+    - location: scripts/deploy.sh
+      timeout: 60
+      runas: ubuntu
