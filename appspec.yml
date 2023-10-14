@@ -4,13 +4,13 @@ os: linux
 # S3로부터 받은 .zip file의 압축해제 경로 설정
 files:
   - source: /
-    destination: /home/ubuntu
+    destination: /home/ubuntu/clone_lm
     overwrite: yes
 file_exists_behavior: OVERWRITE
 
 # 압축해제 된 파일들의 권한 설정
 permissions:
-  - object: /home/ubuntu
+  - object: /home/ubuntu/clone_lm
     owner: ubuntu
     group: ubuntu
 
