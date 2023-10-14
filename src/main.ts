@@ -33,7 +33,7 @@ async function bootstrap() {
     credentials: true, // 쿠키를 사용하려면 true로 설정
     exposedHeaders: ['accessToken', 'refreshToken'],
   });
-  //test cicd 재배포 되는가?
+  // 왜 안되지??
   await app.listen(3000);
 }
 
