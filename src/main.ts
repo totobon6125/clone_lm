@@ -32,7 +32,7 @@ async function bootstrap() {
     credentials: true, // 쿠키를 사용하려면 true로 설정
     exposedHeaders: ['accessToken', 'refreshToken'],
   });
-
+  //test cicd
   await app.listen(3000);
 }
 
