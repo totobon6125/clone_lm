@@ -33,7 +33,7 @@ async function bootstrap() {
     credentials: true, // 쿠키를 사용하려면 true로 설정
     exposedHeaders: ['accessToken', 'refreshToken'],
   });
-  // 왜 안되지??
+  // 왜 안되지???????
   await app.listen(3000);
 }
 
